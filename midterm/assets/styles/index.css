@@ -37,4 +37,12 @@ body {
 
   --color-btn-primary: var(--yellow-100);
   --color-btn-secondary: var(--dark);
+
+  --container-size: 1320px;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-size);
+  margin: auto;
 }
