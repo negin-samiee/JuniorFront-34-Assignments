@@ -27,6 +27,7 @@ body {
   --color-bg-brand: var(--green-200);
   --color-bg-brand-dark: var(--green-300);
   --color-bg-brand-darker: var(--green-400);
+  --color-bg-circle: var(--green-600);
   --color-bg-accent: var(--yellow-100);
   --color-bg-primary: var(--white);
   --color-bg-secondary: var(--gray-100);
@@ -40,10 +41,126 @@ body {
   --color-btn-secondary: var(--dark);
 
   --container-size: 1320px;
+  --container-padding: 15px;
 }
 
 .container {
   width: 100%;
   max-width: var(--container-size);
   margin: auto;
+}
+
+.bg-red {
+  background-color: red;
+}
+
+.hero {
+  background: linear-gradient(
+    to right,
+    var(--color-bg-brand-darker),
+    var(--color-bg-brand-dark)
+  );
+}
+.hero-text {
+  padding: 27px var(--container-padding) 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.year {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 30px;
+  color: var(--color-text-primary);
+  opacity: 30%;
+}
+.autumn {
+  margin: 0;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 50px;
+  color: var(--color-text-primary);
+}
+.autumn-off {
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--color-text-primary);
+  opacity: 80%;
+}
+.collection-btn {
+  /* ---px size--- */
+  width: 180px;
+  aspect-ratio: 3.673;
+  display: inline-block;
+  margin-top: 12px;
+  padding: 16px 40px;
+  border-radius: 6px;
+  background-color: var(--color-btn-primary);
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  border: none;
+}
+.green-jacket {
+  width: 208.08px;
+  height: 391px;
+}
+.hero-pic-p {
+  padding: 0 var(--container-padding);
+
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.hero-radio {
+  align-self: self-end;
+  position: absolute;
+  z-index: 1;
+}
+.hero-pic {
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.circle--1 {
+  display: block;
+  width: 192.63px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: var(--color-bg-circle);
+  position: absolute;
+  top: 16.31px;
+  right: -47.74px;
+}
+.circle--2 {
+  display: block;
+  width: 198.55px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: var(--color-bg-circle);
+  position: absolute;
+  top: 110.04px;
+  left: -48.74px;
+}
+.menu {
+  padding: 12px;
+  display: flex;
+  gap: 52.5px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-bg-accent);
+}
+.brands-list {
+  padding: 12px;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 20.69px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-bg-dark);
 }
