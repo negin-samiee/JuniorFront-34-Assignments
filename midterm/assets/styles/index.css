@@ -50,6 +50,14 @@ body {
   margin: auto;
 }
 
+.section-headings {
+  margin: 0;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 32px;
+  color: var(--color-text-secondary);
+}
+
 .bg-red {
   background-color: red;
 }
@@ -163,4 +171,8 @@ body {
   align-items: center;
   justify-content: space-between;
   background-color: var(--color-bg-dark);
+}
+
+.new-collection {
+  padding: 32px var(--container-padding);
 }
